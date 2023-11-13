@@ -90,8 +90,7 @@ When searching in the helm-find-files (`SPC f f') actions (`C-z')."
   "Set navigation on 'hjkl' for the given editing STYLE."
   (cond
    ((or (eq 'vim style)
-        (and (eq 'hybrid style)
-             hybrid-style-enable-hjkl-bindings))
+        hybrid-style-enable-hjkl-bindings)
     (define-key helm-map (kbd "C-j") 'helm-next-line)
     (define-key helm-map (kbd "C-k") 'helm-previous-line)
     (define-key helm-map (kbd "C-S-j") 'helm-follow-action-forward)

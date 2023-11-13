@@ -206,9 +206,7 @@ in `dotspacemacs-themes'.")
 
 (defun spacemacs//support-hjkl-navigation-p ()
   "Returns non-nil if navigation keys should be evilified."
-  (or (eq dotspacemacs-editing-style 'vim)
-      (and (eq dotspacemacs-editing-style 'hybrid)
-           hybrid-style-enable-hjkl-bindings)))
+  hybrid-style-enable-hjkl-bindings)
 
 (spacemacs|defc dotspacemacs-startup-banner 'official
   "Specify the startup banner. Default value is `official', it displays
